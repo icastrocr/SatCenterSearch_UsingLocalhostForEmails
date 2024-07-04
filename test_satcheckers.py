@@ -66,8 +66,8 @@ class TestSatchecker():
             self.test_satchecker()
         print(number)  # Output: 0
 
-
-
+# Original Code Use to Send Emails
+'''
         # sending the mail
         if (number > 0):
             import smtplib
@@ -88,8 +88,25 @@ class TestSatchecker():
             # terminating the session
             s.quit()
         #time.sleep()
+'''
 
+# using localhost for emails
+# need to run the following command to create the local SMTP server
+# python -m smtpd -c DebuggingServer -n localhost:1025
+        # sending the mail
+        if (number > 0):
+            import smtplib
 
+            # creates SMTP session
+            s = smtplib.SMTP('localhost')
+            
+            # message to be sent
+            message = str(number) + "  Testing Centers Open"
+            s.sendmail(email, email, message)
+
+            # terminating the session
+            s.quit()
+        #time.sleep()
 
 # send("completed the test for SAT")
 
