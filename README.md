@@ -1,2 +1,4 @@
-# SatCenterSearch
-To use it fill in the variables at the top of the file with your respective information. It will alert you and spam you with emails if a test center is open. It is your responsibility to sign-up for it. You might have to set up your email with smtp (just search it up). If enough people want, i could make it register automatically but its a lot of work. Somtimes the program crashes, so make sure to check if the code is still running at least once every day, just make sure there's no error popping up.
+# SatCenterSearch #ForkCode #
+To use it fill in the variables at the top of the file with your respective information. This fork removes the email portion of the original code and instead will write to console the outcome of the script with the list of test centers that have open slots. It is your responsibility to sign-up for it.
+
+This is to remove the complexity of sending emails for less experience users (like me).
