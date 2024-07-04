@@ -93,8 +93,9 @@ class TestSatchecker():
 # using localhost for emails
 # need to run the following command to create the local SMTP server
 # python -m smtpd -c DebuggingServer -n localhost:1025
+
         # sending the mail
-        if (number > 0):
+if (number > 0):
             import smtplib
 
             # creates SMTP session
